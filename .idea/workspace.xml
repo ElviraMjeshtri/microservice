@@ -4,33 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56173208-936f-4958-803d-a76c8108fcd8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerRegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudCheckHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudCheckHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudCheckResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudCheckService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="56173208-936f-4958-803d-a76c8108fcd8" name="Changes" comment="Create microservices">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +56,22 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/User/DEVELOPMENT/amigoscode/amigosservices/fraud/src/main/resources",
+    "last_opened_file_path": "C:/Users/User/DEVELOPMENT/AMIGOS_CODE_TUTORIAL/amigoscode/amigosservices",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "0aaceb40dce681c3f2248c2e52d35626",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "2a006743f2ee12972613c6f435d83683",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -152,12 +141,34 @@
       <workItem from="1677503540510" duration="71000" />
       <workItem from="1678193782737" duration="3160000" />
       <workItem from="1678261941292" duration="78000" />
-      <workItem from="1678448965676" duration="3175000" />
+      <workItem from="1678448965676" duration="3829000" />
+      <workItem from="1678783274075" duration="2994000" />
+      <workItem from="1678869284330" duration="668000" />
+      <workItem from="1679571195915" duration="618000" />
+      <workItem from="1705056383159" duration="1391000" />
+      <workItem from="1707819951817" duration="721000" />
+      <workItem from="1707902725811" duration="1829000" />
+      <workItem from="1708341260896" duration="2049000" />
+      <workItem from="1708418246808" duration="1220000" />
+      <workItem from="1708597723622" duration="24000" />
+      <workItem from="1709549256089" duration="3343000" />
     </task>
+    <task id="LOCAL-00001" summary="Create microservices">
+      <created>1678467631511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678467631511</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create microservices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
