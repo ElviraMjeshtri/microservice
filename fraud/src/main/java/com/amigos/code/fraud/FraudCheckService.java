@@ -16,7 +16,6 @@ public class FraudCheckService {
                 .customerId(customerId)
                 .createdAt(LocalDateTime.now())
                 .build());
-
         return false;
     }
 }
