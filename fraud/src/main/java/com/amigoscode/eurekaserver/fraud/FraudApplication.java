@@ -1,4 +1,4 @@
-package com.amigos.code.fraud;
+package com.amigoscode.eurekaserver.fraud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
