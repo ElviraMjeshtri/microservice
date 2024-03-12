@@ -1,4 +1,4 @@
-package com.amigoscode.eurekaserver.fraud;
+package com.amigoscode.fraud;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

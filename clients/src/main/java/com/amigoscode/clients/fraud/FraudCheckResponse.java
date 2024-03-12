@@ -1,4 +1,4 @@
-package com.amigoscode.eurekaserver.fraud;
+package com.amigoscode.clients.fraud;
 
 public record FraudCheckResponse(boolean isFraudster) {
 }

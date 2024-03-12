@@ -1,5 +1,9 @@
 package com.amigoscode.customer;
 
+import com.amigoscode.clients.fraud.FraudCheckResponse;
+import com.amigoscode.clients.fraud.FraudClient;
+import com.amigoscode.clients.notification.NotificationClient;
+import com.amigoscode.clients.notification.NotificationRequest;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -11,6 +15,8 @@ import org.springframework.web.client.RestTemplate;
 public class CustomerService {
     private final CustomerRepository customerRepository;
     private final RestTemplate restTemplate;
+    private final FraudClient fraudClient;
+    private final NotificationClient notificationClient;
     public void registerCustomer(CustomerRegistrationRequest request){
         Customer customer = Customer.builder()
                 .firstName(request.firstName())
@@ -21,16 +27,21 @@ public class CustomerService {
         //TODO: check if email not taken
         customerRepository.saveAndFlush(customer);
         //TODO: check if fraudster ( this access the Fraud api and gets the is fraudster response)
-        FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
-                "http://localhost:8082/api/v1/fraud-check/{customerId}",
-                FraudCheckResponse.class,
-                customer.getId()
-        );
+        FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(customer.getId());
+
         log.info("Fraud check request for customer {} ", customer.getId());
         assert fraudCheckResponse != null;
         if (fraudCheckResponse.isFraudster()){
             throw new IllegalStateException("fraudster");
         }
-        //TODO: send notification
+
+        notificationClient.sendNotification(
+                new NotificationRequest(
+                        customer.getId(),
+                        customer.getEmail(),
+                        String.format("Hi %s, welcome to Amigoscode...",
+                                customer.getFirstName())
+                )
+        );
     }
 }

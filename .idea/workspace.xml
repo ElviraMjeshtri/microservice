@@ -4,18 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56173208-936f-4958-803d-a76c8108fcd8" name="Changes" comment="Add communication between 2 microservices via restTemplate">
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/amigoscode/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="56173208-936f-4958-803d-a76c8108fcd8" name="Changes" comment="Add Eureka server to the project">
+      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/amigoscode/clients/fraud/FraudClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/amigoscode/clients/notification/NotificationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/amigoscode/clients/notification/NotificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/NotificationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudCheckHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudCheckHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudCheckHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudCheckHistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudCheckResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudCheckResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudCheckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudCheckService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigos/code/fraud/FraudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/FraudCheckResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/amigoscode/clients/fraud/FraudCheckResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/amigoscode/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/amigoscode/notification/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/fraud/FraudApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudCheckHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/fraud/FraudCheckHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudCheckHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/fraud/FraudCheckHistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudCheckResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudCheckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/fraud/FraudCheckService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/fraud/FraudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -67,15 +85,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/User/DEVELOPMENT/AMIGOS_CODE_TUTORIAL/amigoscode/amigosservices/eureka-server/src/main/resources",
+    "last_opened_file_path": "C:/Users/User/DEVELOPMENT/AMIGOS_CODE_TUTORIAL/amigoscode/amigosservices/notification/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2735632",
     "spring.configuration.checksum": "e1d32661598005eb07fd2a0b43ceb32d",
     "vue.rearranger.settings.migration": "true"
   },
@@ -90,14 +108,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\DEVELOPMENT\AMIGOS_CODE_TUTORIAL\amigoscode\amigosservices\notification\src\main\resources" />
       <recent name="C:\Users\User\DEVELOPMENT\AMIGOS_CODE_TUTORIAL\amigoscode\amigosservices\eureka-server\src\main\resources" />
       <recent name="C:\Users\User\DEVELOPMENT\amigoscode\amigosservices\fraud\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.amigoscode.clients.fraud" />
       <recent name="com.amigoscode.customer" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager" selected="Spring Boot.FraudApplication (1)">
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="customer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.amigoscode.customer.CustomerApplication" />
@@ -124,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FraudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="FraudApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="fraud" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.amigos.code.fraud.FraudApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.amigoscode.eurekaserver.fraud.FraudApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amigos.code.fraud.*" />
+          <option name="PATTERN" value="com.amigoscode.eurekaserver.fraud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,9 +173,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
-        <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.FraudApplication (1)" />
         <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -188,7 +208,9 @@
       <workItem from="1709719256880" duration="1206000" />
       <workItem from="1709802207778" duration="1194000" />
       <workItem from="1709888845528" duration="3676000" />
-      <workItem from="1710152165380" duration="3515000" />
+      <workItem from="1710152165380" duration="4173000" />
+      <workItem from="1710174313518" duration="2233000" />
+      <workItem from="1710232551242" duration="6012000" />
     </task>
     <task id="LOCAL-00001" summary="Create microservices">
       <created>1678467631511</created>
@@ -211,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709637954858</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Eureka server to the project">
+      <created>1710171736644</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710171736644</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,19 +249,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create microservices" />
     <MESSAGE value="Add communication between 2 microservices via restTemplate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add communication between 2 microservices via restTemplate" />
+    <MESSAGE value="Add Eureka server to the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Eureka server to the project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerApplication.java</url>
-          <line>4</line>
+          <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/eurekaserver/fraud/FraudController.java</url>
-          <line>14</line>
+          <url>file://$PROJECT_DIR$/fraud/src/main/java/com/amigoscode/fraud/FraudController.java</url>
+          <line>15</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
